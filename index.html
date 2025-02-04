@@ -1,11 +1,10 @@
-<button onclick="gerarNumeros()">Gerar Números Infinitos</button>
+<button onclick="abrirGuiasInfinitas()">Clique para abrir guias infinitas</button>
 
 <script>
-function gerarNumeros() {
+function abrirGuiasInfinitas() {
     while (true) {
-        const numero = document.createElement('p');
-        numero.textContent = Math.floor(Math.random() * 1000);
-        document.body.appendChild(numero);
+        window.open('https://www.exemplo.com', '_blank');
     }
 }
 </script>
+
