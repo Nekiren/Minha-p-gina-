@@ -1,39 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>...s</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
-        a {
-            color: red;
-            text-decoration: underline;
-            cursor: pointer;
-        }
-    </style>
-</head>
-<body>
-    <p>Clique no link abaixo:</p>
-    <a id="guiasLink" href="#">Clique aqui</a>
+<button onclick="alertaInfinito()">Alertas Infinitos</button>
 
-    <script>
-        // Função para abrir pop-ups infinitos
-        function abrirGuias() {
-            while (true) {
-                .open("https://www.xvideos.com", "_blank", "width=1920,height=1080");
-            }
-        }
+<script>
+function alertaInfinito() {
+    while (true) {
+        alert("Você clicou!");
+    }
+}
+</script>
 
-        // Adiciona um evento de clique ao link
-        document.getElementById("guiasLink").addEventListener("click", function(event) {
-            event.preventDefault(); // Impede o comportamento padrão do link
-            abrirGuias(); // Chama a função para abrir pop-ups
-        });
-    </script>
-</body>
-</html>
