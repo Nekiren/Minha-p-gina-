@@ -1,10 +1,14 @@
-<button onclick="alertaInfinito()">Alertas Infinitos</button>
+<button onclick="criarCaixasInfinitas()">Criar Caixas Infinitas</button>
 
 <script>
-function alertaInfinito() {
+function criarCaixasInfinitas() {
     while (true) {
-        alert("Você clicou!");
+        const caixa = document.createElement('div');
+        caixa.style.width = '50px';
+        caixa.style.height = '50px';
+        caixa.style.margin = '5px';
+        caixa.style.backgroundColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+        document.body.appendChild(caixa);
     }
 }
 </script>
-
